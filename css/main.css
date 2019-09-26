@@ -1,0 +1,32 @@
+#left-eye {
+  animation: bear-eyes 3s linear infinite;
+}
+
+#right-eye {
+  animation: bear-eyes 3s linear infinite;
+}
+
+@keyframes bear-eyes {
+
+  0% {
+    transform: translateX(5px);
+  }
+
+  50% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(5px);
+  }
+
+}
+
+#left-ear,
+#right-ear {
+  transition: all .5s ease-in;
+}
+
+#bear:hover #left-ear,
+#bear:hover #right-ear {
+  transform: translateY(-15px);
