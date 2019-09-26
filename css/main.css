@@ -1,3 +1,13 @@
+#left-ear,
+#right-ear {
+  transition: all .5s ease-in;
+}
+
+#bear:hover #left-ear,
+#bear:hover #right-ear {
+  transform: translateY(-10px);
+}
+
 #left-eye {
   animation: bear-eyes 3s linear infinite;
 }
@@ -21,12 +31,3 @@
   }
 
 }
-
-#left-ear,
-#right-ear {
-  transition: all .5s ease-in;
-}
-
-#bear:hover #left-ear,
-#bear:hover #right-ear {
-  transform: translateY(-15px);
